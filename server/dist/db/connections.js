@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const sequelize_1 = require("sequelize");
+const sequelize = new sequelize_1.Sequelize('almacen', 'root', '', {
+    host: 'localhost',
+    dialect: 'mysql',
+    logging: false
+    /* ejecuta una consulta al conectarse a la base de datos */
+});
+exports.default = sequelize;
